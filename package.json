@@ -1,5 +1,5 @@
 {
-  "name": "25258-proyecto-final-felixsalvatierra",
+  "name": "clase-12",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +8,12 @@
     "dev": "node --watch index.js"
   },
   "keywords": [],
-  "author": "Felix Salvatierra",
+  "author": "",
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "firebase": "^12.6.0",
+    "jsonwebtoken": "^9.0.2"
   }
 }
