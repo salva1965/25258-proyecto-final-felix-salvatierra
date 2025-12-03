@@ -12,6 +12,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "firebase": "^12.6.0",
     "jsonwebtoken": "^9.0.2"

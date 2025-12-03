@@ -1,4 +1,3 @@
-//import  productService from "../services/productServices.js";
 import * as model from "../models/ProductModels.js";
 
 export const getProducts = async (req,res) => {
@@ -33,7 +32,7 @@ export const creatProduct = async (req,res) =>{
     
     const {name,precio,categoria} = req.body;
 
-    const product =  await model.creatProduct(name,precio,categoria);
+    const product =  await model.creatProduct({name,precio,categoria});
 
     res.status(201).json(product);
 };
@@ -41,10 +40,9 @@ export const creatProduct = async (req,res) =>{
 export const deleteProduct = async (req,res) => {
     
     const {id} =req.params;
-    const product = await deleteId(id);
-    if (!product) {
-        res.status(404).json({error:"Producto no encontrado"});
-        return;
+    const deleted = await model.deleteProduct(id);
+    if (!deleted) {
+        return res.status(404).json({error:"Producto no encontrado"});
     }
-    res.json({product:"eliminado"});
+    res.json({Producto:"eliminado"});
 };
