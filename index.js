@@ -8,7 +8,7 @@ const app=express();
 
 app.use(cors());
 
-app.use(verificacion);
+//app.use(verificacion);
 
 app.use(express.json());
 
