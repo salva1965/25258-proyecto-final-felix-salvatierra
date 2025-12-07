@@ -5,7 +5,7 @@ export const verificacion = (req, res, next) => {
     if (!token) {
         return res.status(401).json({ error: "No token provided" });
     }
-    jwt.verify(token, "Abcd", (err) => {
+    jwt.verify(token, process.env.SECRET, (err) => {
         if (err) return  res.status(401).json({ error: "Invalid token" });
 
     next();

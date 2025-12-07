@@ -10,7 +10,7 @@ router.get("/api/products", getProducts);
 
 router.get("/api/products/:id", getProductById);
 
-router.post("/api/products", verificacion , creatProduct );
+router.post("/api/products/create", verificacion , creatProduct );
 
 router.delete("/api/products/:id" , deleteProduct );
 
