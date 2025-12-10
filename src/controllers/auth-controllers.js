@@ -5,7 +5,7 @@ export const login = (req, res) => {
     if(email == "x@x.com" && password == "1234!") {
         const token = jwt.sign({email},process.env.SECRET, {expiresIn: "2 days"});
 
-        return res.json({token});
+        return res.status(200).json({token});
     }
     res.status(401).json({error: "Invalid credentials"});
 };
