@@ -45,7 +45,7 @@
 ### DELETE /api/products/id
 404 "error":"Producto no encontrado"
 
-    "Producto":"Eliminado"
+200 "Producto":"Eliminado"
 
 # Dependencias 
 `$ npm i express`
