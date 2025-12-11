@@ -44,6 +44,7 @@
 # Borrar un producto
 ### DELETE /api/products/id
 404 "error":"Producto no encontrado"
+
     "Producto":"Eliminado"
 
 # Dependencias 
