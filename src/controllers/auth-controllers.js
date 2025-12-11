@@ -7,5 +7,5 @@ export const login = (req, res) => {
 
         return res.status(200).json({token});
     }
-    res.status(401).json({error: "Invalid credentials"});
+    res.status(401).json({error: "Usuario Inexistente"});
 };
