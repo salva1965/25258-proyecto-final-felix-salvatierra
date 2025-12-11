@@ -22,9 +22,13 @@
 
 
 `{`
+
 `    "name": "zapatos",`
+
  `   "precio": 400000,`
+
 `    "categoria";["caballero","cuero"]`
+
 `}`
 
 # Mostrar todos los productos
