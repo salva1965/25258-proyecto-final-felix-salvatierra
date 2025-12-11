@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(productRouter);
 
 app.use((req,res,next) => {
-    res.status(404).json({error:"Not found"});
+    res.status(404).json({error:"Ruta no Definida"});
 });
 
 const PORT= process.env.PORT || 3005;
